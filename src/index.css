@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+.Principal{
+  background-image: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.1)), url(./assets/background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/*Responsividade*/
+@media screen and (max-width: 768px) {
+  .Principal{
+    flex-direction: column;
+  }
+  .Card{
+    width: 100%;
+  }
+  .Card h1{
+    font-size: 1.4rem;
+  }
+  .Card h2{
+    font-size: 1.2rem;
+  }
+}
