@@ -1,6 +1,19 @@
+import { useState } from "react";
+import { filmes } from "./data/filmes";
 import capa from "./assets/capa.png";
 
 function App() {
+  const[active, setActive] = useState("All");
+
+  const buttons = [
+    "All",
+    "Ação",
+    "Aventura",
+    "Ficção",
+    "Comédia",
+    "Drama",
+    "Terror",
+  ]
   return(
     <div className="w-full h-screen bg-zinc-800">
       <div className="w-full h-20 flex items-center justify-between p-3 bg-zinc-900">
@@ -21,6 +34,22 @@ function App() {
             <button className="w-28 p-2 cursor-pointer rounded-lg bg-amber-300 active:bg-amber-400 transition-all duration-300">Trailer</button>
           </div>
         </div>
+      </div>
+      <div className="w-full p-5 flex items-center justify-center flex-wrap bg-zinc-900 gap-2">
+        {buttons.map((btn) => (
+          <button key={btn} onClick={() => setActive(btn)} className={`w-28 h-11 rounded-lg cursor-pointer ${active === btn ? "bg-amber-300" : "bg-zinc-700 text-white"}`}>{btn}</button>
+        ))}
+      </div>
+      <div className="w-full p-5 flex items-center justify-center flex-wrap bg-zinc-800 gap-5">
+        {filmes.map((filme, index) => (
+          <div key={index} className="w-72 rounded-2xl bg-zinc-900">
+            <img src={filme.imagem} alt="Capa" className="w-full h-80"/>
+            <div className="w-full flex items-center justify-between p-3">
+              <h1 className="text-zinc-200">{filme.ano}</h1>
+              <h2 className="text-zinc-200">{filme.genero}</h2>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
