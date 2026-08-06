@@ -13,6 +13,9 @@ function App() {
     "Comédia",
     "Drama",
     "Terror",
+    "Romance",
+    "Animação",
+    "Documentário"
   ]
   return(
     <div className="w-full h-screen bg-zinc-800">
@@ -35,14 +38,16 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="w-full p-5 flex items-center justify-center flex-wrap bg-zinc-900 gap-2">
-        {buttons.map((btn) => (
-          <button key={btn} onClick={() => setActive(btn)} className={`w-28 h-11 rounded-lg cursor-pointer ${active === btn ? "bg-amber-300" : "bg-zinc-700 text-white"}`}>{btn}</button>
-        ))}
+      <div className="w-full p-5 flex items-center justify-center flex-col bg-zinc-900">
+        <div className="w-full flex items-center justify-center flex-wrap gap-2">
+          {buttons.map((btn) => (
+            <button key={btn} onClick={() => setActive(btn)} className={`w-32 h-11 rounded-lg cursor-pointer transition-all duration-300 ${active === btn ? "bg-amber-300" : "bg-zinc-700 text-white"}`}>{btn}</button>
+          ))}
+        </div>
       </div>
       <div className="w-full p-5 flex items-center justify-center flex-wrap bg-zinc-800 gap-5">
         {filmes.map((filme, index) => (
-          <div key={index} className="w-72 rounded-2xl bg-zinc-900">
+          <div key={index} className="w-72 rounded-2xl bg-zinc-950">
             <img src={filme.imagem} alt="Capa" className="w-full h-80"/>
             <div className="w-full flex items-center justify-between p-3">
               <h1 className="text-zinc-200">{filme.ano}</h1>
