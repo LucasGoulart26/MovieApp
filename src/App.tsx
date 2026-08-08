@@ -73,8 +73,8 @@ function App() {
           </div>
           {novosfilmes.map((novosfilme, index) => (
             <div key={index} className="w-full h-20 p-5 rounded-lg bg-zinc-800 border-2 border-zinc-700 flex items-center justify-center gap-3 hover:border-amber-300 transition-all duration-300">
-              <div className="w-10 h-10 rounded-lg bg-amber-300 flex items-center justify-center">
-                <RiMovie2Line className="text-2xl"/>
+              <div className="w-12 h-12 rounded-lg bg-amber-300 flex items-center justify-center">
+                <RiMovie2Line className="text-3xl"/>
               </div>
               <div className="w-full flex items-start justify-center flex-col">
                 <div className="w-full flex items-center justify-between">

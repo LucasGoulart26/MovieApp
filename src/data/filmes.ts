@@ -6,6 +6,11 @@ import capaFilme5 from "../assets/Img/capa_filme5.jpg";
 import capaFilme6 from "../assets/Img/capa_filme6.jpg";
 import capaFilme7 from "../assets/Img/capa_filme7.jpeg";
 import capaFilme8 from "../assets/Img/capa_filme8.jpg";
+import capaFilme9 from "../assets/Img/capa_filme9.jpg";
+import capaFilme10 from "../assets/Img/capa_filme10.jpg";
+import capaFilme11 from "../assets/Img/capa_filme11.jpg";
+import capaFilme12 from "../assets/Img/capa_filme12.jpg";
+import capaFilme13 from "../assets/Img/capa_filme13.jpg";
 
 export const filmes = [
   {
@@ -57,27 +62,75 @@ export const filmes = [
     categoria: "Ação",
   },
   {
-    imagem: capaFilme2,
-    ano: "2023",
-    genero: "Ação/Thriller",
+    imagem: capaFilme9,
+    ano: "2026",
+    genero: "Ficção cientifica/Terror",
+    categoria: "Ficção",
+  },
+  {
+    imagem: capaFilme10,
+    ano: "2025",
+    genero: "Terror/Ação",
+    categoria: "Terror",
+  },
+  {
+    imagem: capaFilme11,
+    ano: "2024",
+    genero: "Terror/Mistério",
+    categoria: "Terror",
+  },
+  {
+    imagem: capaFilme12,
+    ano: "2025",
+    genero: "Animação/Terror",
+    categoria: "Animação",
+  },
+  {
+    imagem: capaFilme13,
+    ano: "2021",
+    genero: "Ação/Fantasia",
     categoria: "Ação",
   },
   {
-    imagem: capaFilme2,
-    ano: "2023",
-    genero: "Ação/Thriller",
-    categoria: "Ação",
+    imagem: capaFilme12,
+    ano: "2025",
+    genero: "Animação/Terror",
+    categoria: "Animação",
   },
   {
-    imagem: capaFilme2,
-    ano: "2023",
-    genero: "Ação/Thriller",
-    categoria: "Ação",
+    imagem: capaFilme12,
+    ano: "2025",
+    genero: "Animação/Terror",
+    categoria: "Animação",
   },
   {
-    imagem: capaFilme2,
-    ano: "2023",
-    genero: "Ação/Thriller",
-    categoria: "Ação",
+    imagem: capaFilme12,
+    ano: "2025",
+    genero: "Animação/Terror",
+    categoria: "Animação",
+  },
+  {
+    imagem: capaFilme12,
+    ano: "2025",
+    genero: "Animação/Terror",
+    categoria: "Animação",
+  },
+  {
+    imagem: capaFilme12,
+    ano: "2025",
+    genero: "Animação/Terror",
+    categoria: "Animação",
+  },
+  {
+    imagem: capaFilme12,
+    ano: "2025",
+    genero: "Animação/Terror",
+    categoria: "Animação",
+  },
+  {
+    imagem: capaFilme12,
+    ano: "2025",
+    genero: "Animação/Terror",
+    categoria: "Animação",
   },
 ];
