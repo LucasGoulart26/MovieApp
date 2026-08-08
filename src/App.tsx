@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { filmes } from "./data/filmes";
+import { novosfilmes } from "./data/novosFilmes";
+import { RiMovie2Line } from "react-icons/ri";
 import capa from "./assets/capa.png";
 
 function App() {
@@ -43,7 +45,7 @@ function App() {
         </div>
       </div>
       <div className="w-full p-5 flex items-center justify-center flex-col bg-zinc-900">
-        <div className="w-[91%] h-14 flex items-center justify-items-start mb-3 border-b-4 border-b-amber-300">
+        <div className="w-[91%] flex items-center justify-items-start mb-3 border-b-2 border-b-amber-300">
           <h1 className="text-2xl text-amber-300">Gêneros dos filmes</h1>
         </div>
         <div className="w-full flex items-center justify-center flex-wrap gap-2">
@@ -62,6 +64,28 @@ function App() {
             </div>
           </div>
         ))}
+      </div>
+      <div className="w-full h-screen flex items-center justify-center bg-zinc-900 gap-5">
+        <div className="w-[90%] flex items-center justify-center flex-col gap-5">
+          <div className="w-full h-20 p-4 flex items-start justify-center flex-col border-l-2 border-l-amber-300">
+            <h1 className="text-4xl text-amber-300">Novos Filmes</h1>
+            <p className="text-zinc-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+          {novosfilmes.map((novosfilme, index) => (
+            <div key={index} className="w-full h-20 p-5 rounded-lg bg-zinc-800 border-2 border-zinc-700 flex items-center justify-center gap-3 hover:border-amber-300 transition-all duration-300">
+              <div className="w-10 h-10 rounded-lg bg-amber-300 flex items-center justify-center">
+                <RiMovie2Line className="text-2xl"/>
+              </div>
+              <div className="w-full flex items-start justify-center flex-col">
+                <div className="w-full flex items-center justify-between">
+                  <h2 className="text-2xl text-zinc-200">{novosfilme.titulo}</h2>
+                  <p className="w-20 text-center p-1 rounded-lg bg-amber-300">{novosfilme.ano}</p>
+                </div>
+                <button className="cursor-pointer text-zinc-200 hover:text-amber-300 transition-all duration-300">Watch trailer</button>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
