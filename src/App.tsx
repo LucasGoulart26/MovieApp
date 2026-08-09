@@ -43,8 +43,10 @@ function App() {
       <div className="w-full h-20 flex items-center justify-between p-5 bg-zinc-900">
         <h1 className="text-3xl text-amber-300">MovieApp</h1>
         <div className="w-96 h-11 flex items-center justify-center">
-          <input type="text" placeholder="Search movies" className="w-full h-full outline-0 bg-zinc-700 border-2 border-zinc-600 p-3 text-white placeholder:text-white rounded-bl-2xl rounded-tl-2xl"/>
-          <button className="w-20 h-full cursor-pointer rounded-br-lg rounded-tr-lg bg-amber-300 active:bg-amber-400 transition-all duration-300">Search</button>
+          <input type="text" placeholder="Search movies" className="w-full h-full outline-0 bg-zinc-700 border-2 border-zinc-600 p-3 text-white placeholder:text-white rounded-bl-lg rounded-tl-lg"/>
+          <button className="w-16 h-full cursor-pointer rounded-br-lg rounded-tr-lg bg-amber-300 active:bg-amber-400 transition-all duration-300 flex items-center justify-center">
+            <FaSearch className="text-2xl"/>
+          </button>
         </div>
       </div>
       <div className="Principal w-full h-screen flex items-center justify-center p-5 gap-5">
@@ -81,14 +83,14 @@ function App() {
           </div>
         ))}
       </div>
-      <div className="w-full h-screen flex items-center justify-center bg-zinc-900 gap-5">
-        <div className="w-[90%] flex items-center justify-center flex-col gap-5">
+      <div className="w-full h-screen flex items-center justify-center bg-zinc-900 gap-5 p-5">
+        <div className="w-2xl flex items-center justify-center flex-col gap-5">
           <div className="w-full h-20 p-4 flex items-start justify-center flex-col border-l-2 border-l-amber-300">
             <h1 className="text-4xl text-amber-300">Novos Filmes</h1>
             <p className="text-zinc-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
           {novosfilmes.map((novosfilme, index) => (
-            <div key={index} className="w-full h-24 p-5 rounded-lg bg-zinc-800 border-2 border-zinc-700 flex items-center justify-center gap-3 hover:border-amber-300 transition-all duration-300">
+            <div key={index} className="w-full h-20 p-5 rounded-lg bg-zinc-800 border-2 border-zinc-700 flex items-center justify-center gap-3 hover:border-amber-300 transition-all duration-300">
               <div className="w-12 h-12 rounded-lg bg-amber-300 flex items-center justify-center">
                 <RiMovie2Line className="text-3xl"/>
               </div>
@@ -101,17 +103,7 @@ function App() {
             </div>
           ))}
         </div>
-      </div>
-      <div className="w-full h-screen flex items-center justify-center flex-col bg-zinc-900">
-        <div className="w-[90%] h-20 flex items-center justify-between p-4 border-l-2 border-l-amber-300">
-          <h1 className="text-3xl text-amber-300">Cinema</h1>
-          <div className="flex items-center justify-center p-2 bg-zinc-700 border-2 border-zinc-600 rounded-2xl">
-            <input type="text" placeholder="Search movie" className="w-96 h-11 outline-0 placeholder:text-white text-white"/>
-            <button className="w-11 h-11 rounded-full cursor-pointer bg-amber-300 active:bg-amber-400 transition-all duration-300 flex items-center justify-center">
-              <FaSearch className="text-2xl"/>
-            </button>
-          </div>
-        </div>
+        <div className="w-96 h-96 bg-zinc-700 border-2 border-zinc-600 rounded-2xl"></div>
       </div>
     </div>
   );

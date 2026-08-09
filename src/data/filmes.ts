@@ -11,6 +11,15 @@ import capaFilme10 from "../assets/Img/capa_filme10.jpg";
 import capaFilme11 from "../assets/Img/capa_filme11.jpg";
 import capaFilme12 from "../assets/Img/capa_filme12.jpg";
 import capaFilme13 from "../assets/Img/capa_filme13.jpg";
+import capaFilme14 from "../assets/Img/capa_filme14.webp";
+import capaFilme15 from "../assets/Img/capa_filme15.jpeg";
+import capaFilme16 from "../assets/Img/capa_filme16.jpg";
+import capaFilme17 from "../assets/Img/capa_filme17.jpg";
+import capaFilme18 from "../assets/Img/capa_filme18.jpg";
+import capaFilme19 from "../assets/Img/capa_filme19.jpg";
+import capaFilme20 from "../assets/Img/capa_filme20.png";
+import capaFilme21 from "../assets/Img/capa_filme21.jpg";
+import capaFilme22 from "../assets/Img/capa_filme22.jpg";
 
 export const filmes = [
   {
@@ -92,45 +101,57 @@ export const filmes = [
     categoria: "Ação",
   },
   {
-    imagem: capaFilme12,
+    imagem: capaFilme14,
     ano: "2025",
-    genero: "Animação/Terror",
-    categoria: "Animação",
+    genero: "Ação/Fantasia",
+    categoria: "Ação",
   },
   {
-    imagem: capaFilme12,
-    ano: "2025",
-    genero: "Animação/Terror",
-    categoria: "Animação",
+    imagem: capaFilme15,
+    ano: "2022",
+    genero: "Ficção cientifica/Ação",
+    categoria: "Ficção",
   },
   {
-    imagem: capaFilme12,
-    ano: "2025",
-    genero: "Animação/Terror",
-    categoria: "Animação",
+    imagem: capaFilme16,
+    ano: "2009",
+    genero: "Ficção cientifica/Ação",
+    categoria: "Ficção",
   },
   {
-    imagem: capaFilme12,
-    ano: "2025",
-    genero: "Animação/Terror",
-    categoria: "Animação",
+    imagem: capaFilme17,
+    ano: "2013",
+    genero: "Comédia",
+    categoria: "Comédia",
   },
   {
-    imagem: capaFilme12,
-    ano: "2025",
-    genero: "Animação/Terror",
-    categoria: "Animação",
+    imagem: capaFilme18,
+    ano: "2016",
+    genero: "Comédia",
+    categoria: "Comédia",
   },
   {
-    imagem: capaFilme12,
-    ano: "2025",
-    genero: "Animação/Terror",
-    categoria: "Animação",
+    imagem: capaFilme19,
+    ano: "2019",
+    genero: "Comédia",
+    categoria: "Comédia",
   },
   {
-    imagem: capaFilme12,
-    ano: "2025",
-    genero: "Animação/Terror",
-    categoria: "Animação",
+    imagem: capaFilme20,
+    ano: "2015",
+    genero: "Comédia",
+    categoria: "Comédia",
+  },
+  {
+    imagem: capaFilme21,
+    ano: "2019",
+    genero: "Comédia",
+    categoria: "Comédia",
+  },
+  {
+    imagem: capaFilme22,
+    ano: "2002",
+    genero: "Drama/Crime",
+    categoria: "Drama",
   },
 ];
