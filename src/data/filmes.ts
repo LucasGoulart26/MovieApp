@@ -20,6 +20,16 @@ import capaFilme19 from "../assets/Img/capa_filme19.jpg";
 import capaFilme20 from "../assets/Img/capa_filme20.png";
 import capaFilme21 from "../assets/Img/capa_filme21.jpg";
 import capaFilme22 from "../assets/Img/capa_filme22.jpg";
+import capaFilme23 from "../assets/Img/capa_filme23.jpg";
+import capaFilme24 from "../assets/Img/capa_filme24.jpg";
+import capaFilme25 from "../assets/Img/capa_filme25.jpg";
+import capaFilme26 from "../assets/Img/capa_filme26.jpg";
+import capaFilme27 from "../assets/Img/capa_filme27.jpg";
+import capaFilme28 from "../assets/Img/capa_filme28.jpg";
+import capaFilme29 from "../assets/Img/capa_filme29.jpg";
+import capaFilme30 from "../assets/Img/capa_filme30.jpg";
+import capaFilme31 from "../assets/Img/capa_filme31.jpg";
+import capaFilme32 from "../assets/Img/capa_filme32.jpg";
 
 export const filmes = [
   {
@@ -153,5 +163,65 @@ export const filmes = [
     ano: "2002",
     genero: "Drama/Crime",
     categoria: "Drama",
+  },
+  {
+    imagem: capaFilme23,
+    ano: "2007",
+    genero: "Ação/Crime",
+    categoria: "Ação",
+  },
+  {
+    imagem: capaFilme24,
+    ano: "2010",
+    genero: "Ação/Triller",
+    categoria: "Ação",
+  },
+  {
+    imagem: capaFilme25,
+    ano: "2008",
+    genero: "Romance/Fantasia",
+    categoria: "Romance",
+  },
+  {
+    imagem: capaFilme26,
+    ano: "2009",
+    genero: "Romance/Fantasia",
+    categoria: "Romance",
+  },
+  {
+    imagem: capaFilme27,
+    ano: "2010",
+    genero: "Romance/Fantasia",
+    categoria: "Romance",
+  },
+  {
+    imagem: capaFilme28,
+    ano: "2011",
+    genero: "Romance/Fantasia",
+    categoria: "Romance",
+  },
+  {
+    imagem: capaFilme29,
+    ano: "2012",
+    genero: "Romance/Fantasia",
+    categoria: "Romance",
+  },
+  {
+    imagem: capaFilme30,
+    ano: "2026",
+    genero: "Aventura/Ação",
+    categoria: "Aventura",
+  },
+  {
+    imagem: capaFilme31,
+    ano: "2021",
+    genero: "Ação/Ficção cientifica",
+    categoria: "Ação",
+  },
+  {
+    imagem: capaFilme32,
+    ano: "2019",
+    genero: "Ação/Ficção cientifica",
+    categoria: "Ação",
   },
 ];

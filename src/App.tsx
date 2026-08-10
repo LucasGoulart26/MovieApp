@@ -4,6 +4,7 @@ import { novosfilmes } from "./data/novosFilmes";
 import { RiMovie2Line } from "react-icons/ri";
 import { FaSearch } from "react-icons/fa";
 import capa from "./assets/capa.png";
+import cinema from "./assets/cinema.jpg";
 
 function App() {
   const[active, setActive] = useState("All");
@@ -63,7 +64,7 @@ function App() {
         </div>
       </div>
       <div className="w-full p-5 flex items-center justify-center flex-col bg-zinc-900">
-        <div className="w-[91%] flex items-center justify-items-start mb-3 border-b-2 border-b-amber-300">
+        <div className="w-[91%] h-14 flex items-center justify-items-start mb-3 border-b-2 border-b-amber-300">
           <h1 className="text-2xl text-amber-300">Gêneros dos filmes</h1>
         </div>
         <div className="w-full flex items-center justify-center flex-wrap gap-2">
@@ -83,8 +84,8 @@ function App() {
           </div>
         ))}
       </div>
-      <div className="w-full h-screen flex items-center justify-center bg-zinc-900 gap-5 p-5">
-        <div className="w-2xl flex items-center justify-center flex-col gap-5">
+      <div className="Principal2 w-full h-screen flex items-center justify-center bg-zinc-900 gap-5 p-5">
+        <div className="Card2 w-2xl flex items-center justify-center flex-col gap-5">
           <div className="w-full h-20 p-4 flex items-start justify-center flex-col border-l-2 border-l-amber-300">
             <h1 className="text-4xl text-amber-300">Novos Filmes</h1>
             <p className="text-zinc-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -103,7 +104,9 @@ function App() {
             </div>
           ))}
         </div>
-        <div className="w-96 h-96 bg-zinc-700 border-2 border-zinc-600 rounded-2xl"></div>
+        <div className="w-96 h-96 bg-zinc-800 border-2 border-zinc-700 rounded-2xl overflow-hidden relative">
+          <img src={cinema} alt="Cinema" className="w-full h-full object-cover"/>
+        </div>
       </div>
     </div>
   );
