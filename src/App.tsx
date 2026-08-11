@@ -33,7 +33,6 @@ function App() {
     "Terror",
     "Romance",
     "Animação",
-    "Documentário"
   ];
 
   const filmesFiltrados = active === "All"

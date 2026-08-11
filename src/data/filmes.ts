@@ -30,6 +30,11 @@ import capaFilme29 from "../assets/Img/capa_filme29.jpg";
 import capaFilme30 from "../assets/Img/capa_filme30.jpg";
 import capaFilme31 from "../assets/Img/capa_filme31.jpg";
 import capaFilme32 from "../assets/Img/capa_filme32.jpg";
+import capaFilme33 from "../assets/Img/capa_filme33.png";
+import capaFilme34 from "../assets/Img/capa_filme34.jpg";
+import capaFilme35 from "../assets/Img/capa_filme35.webp";
+import capaFilme36 from "../assets/Img/capa_filme36.webp";
+import capaFilme37 from "../assets/Img/capa_filme37.jpg";
 
 export const filmes = [
   {
@@ -223,5 +228,35 @@ export const filmes = [
     ano: "2019",
     genero: "Ação/Ficção cientifica",
     categoria: "Ação",
+  },
+  {
+    imagem: capaFilme33,
+    ano: "2025",
+    genero: "Animação/Ação",
+    categoria: "Animação",
+  },
+  {
+    imagem: capaFilme34,
+    ano: "2025",
+    genero: "Animação",
+    categoria: "Animação",
+  },
+  {
+    imagem: capaFilme35,
+    ano: "2025",
+    genero: "Animação",
+    categoria: "Animação",
+  },
+  {
+    imagem: capaFilme36,
+    ano: "2017",
+    genero: "Aventura/Ação",
+    categoria: "Aventura",
+  },
+  {
+    imagem: capaFilme37,
+    ano: "2019",
+    genero: "Comédia/Ação",
+    categoria: "Comédia",
   },
 ];
