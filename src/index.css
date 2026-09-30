@@ -7,3 +7,8 @@
     background-position: center;
     background-size: cover;
 }
+
+/*Responsividade*/
+@media screen and (max-width: 768px) {
+    
+}
