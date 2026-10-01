@@ -10,5 +10,15 @@
 
 /*Responsividade*/
 @media screen and (max-width: 768px) {
-    
+    .Home{
+        flex-direction: column;
+    }
+    /*Search*/
+    .Search{
+        width: 70%;
+    }
+    /*Login*/
+    .Login{
+        padding: 1rem;
+    }
 }

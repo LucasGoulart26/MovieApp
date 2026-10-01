@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { filmes } from "../data/filmes";
+import { novosFilmes } from "../data/novosFilmes";
 import Capa from "../assets/capa-do-filme.jpg";
 
 function Home() {
     const [avalicao] = useState(5);
     const [active, setActive] = useState("All");
-    const buttons = ["All", "Ação", "Aventura", "Drama", "Ficção", "Terror"]
+    const buttons = ["All", "Ação", "Aventura", "Drama", "Ficção", "Terror", "Comédia"]
 
     // Estrela de avaliação
     const estrelasAvaliacao = (nota: number) => {
@@ -19,6 +20,8 @@ function Home() {
         }
         return estrelas;
     }
+
+    // Exibir o filme pela categoria
     return (
       <div className="bg-zinc-900">
         <div className="Home w-full h-screen flex items-center justify-center gap-5">
@@ -35,27 +38,27 @@ function Home() {
             <h3 className="text-2xl text-white">
               Avaliação: {estrelasAvaliacao(avalicao)}
             </h3>
-            <div className="flex items-center justify-center gap-5">
-              <button className="w-36 h-10 rounded-lg bg-red-600 text-white cursor-pointer">
+            <div className="w-full flex items-center justify-center gap-5">
+              <button className="w-full h-10 rounded-lg bg-red-600 text-white active:bg-red-700 transition-all duration-300 cursor-pointer">
                 ASSISTIR
               </button>
             </div>
           </div>
         </div>
-        <div className="w-full h-48 flex items-center justify-center p-5 bg-zinc-900">
-          <div className="w-full h-20 p-3 flex items-center justify-between border-b-2 border-b-red-600">
+        <div className="w-full flex items-center justify-center p-5 bg-zinc-900">
+          <div className="w-full p-3 flex items-start justify-items-start flex-col gap-3 border-b-2 border-b-red-600">
             <h3 className="text-2xl text-white font-bold">Selecione:</h3>
-            <div className="flex items-center justify-center gap-2">
+            <div className="w-full flex items-center justify-center flex-wrap gap-2">
               {buttons.map((btn) => (
-                <button key={btn} onClick={() => setActive(btn)} className={`w-28 p-2 rounded-lg cursor-pointer transition-all duration-300 text-white ${active === btn ? "bg-red-600" : "bg-zinc-950"}`}>{btn}</button>
+                <button key={btn} onClick={() => setActive(btn)} className={`w-48 p-2 rounded-lg cursor-pointer transition-all duration-300 text-white ${active === btn ? "bg-red-600" : "bg-zinc-950"}`}>{btn}</button>
               ))}
             </div>
           </div>
         </div>
-        <div className="w-full flex items-center justify-center p-5">
+        <div className="w-full flex items-center justify-center flex-wrap gap-5 p-5">
           {filmes.map((filme, index) => (
-            <div key={index} className="w-96 rounded-2xl bg-zinc-800 border-2 border-zinc-700 overflow-hidden">
-              <img src={filme.imagem} alt="Imagem" className="w-full h-80 bg-zinc-700"/>
+            <div key={index} className="w-96 rounded-lg bg-zinc-800 border-2 border-zinc-700 overflow-hidden">
+              <img src={filme.imagem} alt="Imagem" className="w-full h-96 bg-zinc-700"/>
               <div className="w-full p-3 flex items-center justify-between">
                 <h3 className="text-white">{filme.genero}</h3>
                 <h4 className="text-zinc-300">{filme.ano}</h4>
@@ -63,6 +66,24 @@ function Home() {
             </div>
           ))}
         </div>
+        <div className="w-full h-screen flex items-center justify-center gap-5">
+          <div className="w-2xl flex items-center justify-center flex-col gap-5">
+            <div className="w-full h-20 p-3 flex items-center justify-items-start bg-zinc-800 rounded-lg border-l-4 border-l-red-600">
+              <h1 className="text-2xl text-white font-bold">Novos filmes</h1>
+            </div>
+            {novosFilmes.map((novoFilme, index) => (
+              <div key={index} className="w-full h-20 p-3 flex items-center justify-items-start bg-zinc-800 rounded-lg gap-3 border-2 border-zinc-700">
+                <div className="w-11 h-11 rounded-lg bg-red-600"></div>
+                <div className="flex items-start justify-items-start flex-col">
+                  <h2 className="text-2xl text-white font-bold">{novoFilme.titulo}</h2>
+                  <p className="text-zinc-400">{novoFilme.data}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <img src="" alt="Imagem" className="w-96 h-96 rounded-2xl bg-zinc-800 border-2 border-zinc-700"/>
+        </div>
+        <div className="w-full h-56 flex items-center justify-around bg-zinc-950"></div>
       </div>
     );
 }

@@ -1,6 +1,6 @@
 function Login() {
     return (
-      <div className="w-full h-screen flex items-center justify-center bg-zinc-900">
+      <div className="Login w-full h-screen flex items-center justify-center bg-zinc-900">
         <div className="w-2xl rounded-2xl p-5 bg-zinc-800 border-2 border-zinc-700">
           <h1 className="text-3xl text-red-600 font-bold">Login</h1>
           <div className="w-full flex items-start justify-items-start flex-col mt-3">
