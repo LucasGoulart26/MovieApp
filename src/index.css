@@ -21,4 +21,16 @@
     .Login{
         padding: 1rem;
     }
+    /*Novos Filmes*/
+    .NovosFilmes{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .NovosFilmes img{
+        display: none;
+    }
+    .Card{
+        width: 100%;
+        gap: 3rem;
+    }
 }

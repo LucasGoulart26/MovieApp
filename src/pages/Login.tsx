@@ -7,24 +7,24 @@ function Login() {
             <span className="text-white font-bold">Username:</span>
             <input
               type="text"
-              className="w-full h-11 outline-0 p-3 rounded-lg bg-zinc-600 border-2 border-zinc-500 text-white focus:ring-2 ring-red-600 transition-all duration-300"
+              className="w-full h-11 outline-0 p-3 rounded-lg bg-zinc-700 border-2 border-zinc-600 text-white focus:ring-2 ring-red-600 transition-all duration-300"
             />
           </div>
           <div className="w-full flex items-start justify-items-start flex-col mt-3">
             <span className="text-white font-bold">Email:</span>
             <input
               type="email"
-              className="w-full h-11 outline-0 p-3 rounded-lg bg-zinc-600 border-2 border-zinc-500 text-white focus:ring-2 ring-red-600 transition-all duration-300"
+              className="w-full h-11 outline-0 p-3 rounded-lg bg-zinc-700 border-2 border-zinc-600 text-white focus:ring-2 ring-red-600 transition-all duration-300"
             />
           </div>
           <div className="w-full flex items-start justify-items-start flex-col mt-3">
             <span className="text-white font-bold">Password:</span>
             <input
               type="password"
-              className="w-full h-11 outline-0 p-3 rounded-lg bg-zinc-600 border-2 border-zinc-500 text-white focus:ring-2 ring-red-600 transition-all duration-300"
+              className="w-full h-11 outline-0 p-3 rounded-lg bg-zinc-700 border-2 border-zinc-600 text-white focus:ring-2 ring-red-600 transition-all duration-300"
             />
           </div>
-          <button className="w-full h-11 mt-3 cursor-pointer bg-red-600 text-white rounded-lg">Login</button>
+          <button className="w-full h-11 mt-3 cursor-pointer bg-red-600 text-white rounded-lg active:bg-red-700 transition-all duration-300">Login</button>
         </div>
       </div>
     );

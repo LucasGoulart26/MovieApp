@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { filmes } from "../data/filmes";
 import { novosFilmes } from "../data/novosFilmes";
+import { BiSolidCameraMovie } from "react-icons/bi";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 import Capa from "../assets/capa-do-filme.jpg";
 
 function Home() {
@@ -22,6 +24,9 @@ function Home() {
     }
 
     // Exibir o filme pela categoria
+    const filmesFilter = active === "All"
+    ? filmes
+    : filmes.filter((filme) => filme.categoria.toLowerCase().includes(active.toLowerCase()))
     return (
       <div className="bg-zinc-900">
         <div className="Home w-full h-screen flex items-center justify-center gap-5">
@@ -56,7 +61,7 @@ function Home() {
           </div>
         </div>
         <div className="w-full flex items-center justify-center flex-wrap gap-5 p-5">
-          {filmes.map((filme, index) => (
+          {filmesFilter.map((filme, index) => (
             <div key={index} className="w-96 rounded-lg bg-zinc-800 border-2 border-zinc-700 overflow-hidden">
               <img src={filme.imagem} alt="Imagem" className="w-full h-96 bg-zinc-700"/>
               <div className="w-full p-3 flex items-center justify-between">
@@ -66,14 +71,16 @@ function Home() {
             </div>
           ))}
         </div>
-        <div className="w-full h-screen flex items-center justify-center gap-5">
-          <div className="w-2xl flex items-center justify-center flex-col gap-5">
+        <div className="NovosFilmes w-full h-screen flex items-center justify-center gap-5">
+          <div className="Card w-2xl flex items-center justify-center flex-col gap-5">
             <div className="w-full h-20 p-3 flex items-center justify-items-start bg-zinc-800 rounded-lg border-l-4 border-l-red-600">
               <h1 className="text-2xl text-white font-bold">Novos filmes</h1>
             </div>
             {novosFilmes.map((novoFilme, index) => (
               <div key={index} className="w-full h-20 p-3 flex items-center justify-items-start bg-zinc-800 rounded-lg gap-3 border-2 border-zinc-700">
-                <div className="w-11 h-11 rounded-lg bg-red-600"></div>
+                <div className="w-11 h-11 rounded-lg bg-red-600 flex items-center justify-center">
+                  <BiSolidCameraMovie className="text-4xl text-red-950"/>
+                </div>
                 <div className="flex items-start justify-items-start flex-col">
                   <h2 className="text-2xl text-white font-bold">{novoFilme.titulo}</h2>
                   <p className="text-zinc-400">{novoFilme.data}</p>
@@ -83,7 +90,25 @@ function Home() {
           </div>
           <img src="" alt="Imagem" className="w-96 h-96 rounded-2xl bg-zinc-800 border-2 border-zinc-700"/>
         </div>
-        <div className="w-full h-56 flex items-center justify-around bg-zinc-950"></div>
+        <div className="w-full h-56 flex items-center justify-around bg-zinc-950">
+          <div className="flex items-center justify-center gap-3">
+            <div className="w-16 h-16 rounded-2xl bg-red-600 flex items-center justify-center">
+              <BiSolidCameraMovie className="text-5xl text-red-950"/>
+            </div>
+            <div className="flex items-start justify-items-start flex-col">
+              <h1 className="text-2xl text-white font-bold">Logo</h1>
+              <p className="text-zinc-400">&copy;2026 - Copyright</p>
+            </div>
+          </div>
+          <div className="flex items-center justify-center gap-3">
+            <button className="w-14 h-14 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center">
+              <FaInstagram className="text-4xl text-white"/>
+            </button>
+            <button className="w-14 h-14 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center">
+              <FaFacebook className="text-4xl text-white"/>
+            </button>
+          </div>
+        </div>
       </div>
     );
 }

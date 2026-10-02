@@ -1,14 +1,14 @@
 export const novosFilmes = [
   {
-    titulo: "Nome",
-    data: "Data de lançamento",
+    titulo: "Digger",
+    data: "1 de Outubro de 2026",
   },
   {
-    titulo: "Nome",
-    data: "Data de lançamento",
+    titulo: "Coração Selvagem",
+    data: "25 de Setembro de 2026",
   },
   {
-    titulo: "Nome",
-    data: "Data de lançamento",
+    titulo: "Código Vingança",
+    data: "10 de setembro de 2026",
   },
 ];
