@@ -1,3 +1,5 @@
+import { FaGoogle, FaFacebook } from "react-icons/fa";
+
 function Login() {
     return (
       <div className="Login w-full h-screen flex items-center justify-center bg-zinc-900">
@@ -25,6 +27,16 @@ function Login() {
             />
           </div>
           <button className="w-full h-11 mt-3 cursor-pointer bg-red-600 text-white rounded-lg active:bg-red-700 transition-all duration-300">Login</button>
+          <div className="w-full flex items-center justify-center gap-2 mt-3">
+            <button className="w-full h-11 rounded-lg cursor-pointer bg-white active:bg-zinc-200 transition-all duration-300 flex items-center justify-center gap-2">
+              <FaGoogle/>
+              Google
+            </button>
+            <button className="w-full h-11 rounded-lg cursor-pointer bg-white active:bg-zinc-200 transition-all duration-300 flex items-center justify-center gap-2">
+              <FaFacebook/>
+              Facebook
+            </button>
+          </div>
         </div>
       </div>
     );

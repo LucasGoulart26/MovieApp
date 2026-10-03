@@ -2,13 +2,14 @@ import { useState } from "react";
 import { filmes } from "../data/filmes";
 import { novosFilmes } from "../data/novosFilmes";
 import { BiSolidCameraMovie } from "react-icons/bi";
-import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 import Capa from "../assets/capa-do-filme.jpg";
+import Cinema from "../assets/sala-de-cinema.jpg";
 
 function Home() {
     const [avalicao] = useState(5);
     const [active, setActive] = useState("All");
-    const buttons = ["All", "Ação", "Aventura", "Drama", "Ficção", "Terror", "Comédia"]
+    const buttons = ["All", "Ação", "Aventura", "Ficção", "Terror", "Comédia"]
 
     // Estrela de avaliação
     const estrelasAvaliacao = (nota: number) => {
@@ -88,7 +89,7 @@ function Home() {
               </div>
             ))}
           </div>
-          <img src="" alt="Imagem" className="w-96 h-96 rounded-2xl bg-zinc-800 border-2 border-zinc-700"/>
+          <img src={Cinema} alt="Imagem" className="w-96 h-96 rounded-2xl bg-zinc-800 border-2 border-zinc-700"/>
         </div>
         <div className="w-full h-56 flex items-center justify-around bg-zinc-950">
           <div className="flex items-center justify-center gap-3">
@@ -101,11 +102,14 @@ function Home() {
             </div>
           </div>
           <div className="flex items-center justify-center gap-3">
-            <button className="w-14 h-14 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center">
-              <FaInstagram className="text-4xl text-white"/>
+            <button className="w-12 h-12 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center">
+              <FaInstagram className="text-3xl text-white"/>
             </button>
-            <button className="w-14 h-14 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center">
-              <FaFacebook className="text-4xl text-white"/>
+            <button className="w-12 h-12 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center">
+              <FaFacebook className="text-3xl text-white"/>
+            </button>
+            <button className="w-12 h-12 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center">
+              <FaYoutube className="text-3xl text-white"/>
             </button>
           </div>
         </div>
