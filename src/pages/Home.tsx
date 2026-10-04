@@ -54,9 +54,9 @@ function Home() {
         <div className="w-full flex items-center justify-center p-5 bg-zinc-900">
           <div className="w-full p-3 flex items-start justify-items-start flex-col gap-3 border-b-2 border-b-red-600">
             <h3 className="text-2xl text-white font-bold">Selecione:</h3>
-            <div className="w-full flex items-center justify-center flex-wrap gap-2">
+            <div className="w-full flex items-center justify-center gap-2">
               {buttons.map((btn) => (
-                <button key={btn} onClick={() => setActive(btn)} className={`w-48 p-2 rounded-lg cursor-pointer transition-all duration-300 text-white ${active === btn ? "bg-red-600" : "bg-zinc-950"}`}>{btn}</button>
+                <button key={btn} onClick={() => setActive(btn)} className={`w-full p-2 rounded-lg cursor-pointer transition-all duration-300 text-white ${active === btn ? "bg-red-600" : "bg-zinc-950"}`}>{btn}</button>
               ))}
             </div>
           </div>
@@ -97,19 +97,19 @@ function Home() {
               <BiSolidCameraMovie className="text-5xl text-red-950"/>
             </div>
             <div className="flex items-start justify-items-start flex-col">
-              <h1 className="text-2xl text-white font-bold">Logo</h1>
+              <h1 id="titulo" className="text-2xl text-white font-bold">MovieApp</h1>
               <p className="text-zinc-400">&copy;2026 - Copyright</p>
             </div>
           </div>
           <div className="flex items-center justify-center gap-3">
-            <button className="w-12 h-12 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center">
-              <FaInstagram className="text-3xl text-white"/>
+            <button className="w-12 h-12 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center text-white hover:text-red-600 transition-all duration-300">
+              <FaInstagram className="text-3xl"/>
             </button>
-            <button className="w-12 h-12 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center">
-              <FaFacebook className="text-3xl text-white"/>
+            <button className="w-12 h-12 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center text-white hover:text-red-600 transition-all duration-300">
+              <FaFacebook className="text-3xl"/>
             </button>
-            <button className="w-12 h-12 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center">
-              <FaYoutube className="text-3xl text-white"/>
+            <button className="w-12 h-12 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center text-white hover:text-red-600 transition-all duration-300">
+              <FaYoutube className="text-3xl"/>
             </button>
           </div>
         </div>

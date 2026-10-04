@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import "tailwindcss";
 
 .Home{
@@ -6,6 +7,10 @@
     background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url(./assets/background.jpg);
     background-position: center;
     background-size: cover;
+}
+
+#titulo{
+    font-family: "Bebas Neue";
 }
 
 /*Responsividade*/

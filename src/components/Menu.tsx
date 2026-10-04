@@ -4,8 +4,8 @@ import { FaSearch } from "react-icons/fa";
 function Menu() {
     return(
         <div className="w-full h-20 fixed flex items-center justify-around bg-zinc-900/80 backdrop-blur-2xl">
-            <h1 className="text-2xl font-bold text-red-600">
-                <Link to="/">Logo</Link>
+            <h1 id="titulo" className="text-3xl font-bold text-red-600">
+                <Link to="/">MovieApp</Link>
             </h1>
             <div className="flex items-center justify-center gap-3">
                 <div className="Search w-96 h-10 flex items-center justify-center">
