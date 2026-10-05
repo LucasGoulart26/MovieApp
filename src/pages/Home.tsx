@@ -2,7 +2,7 @@ import { useState } from "react";
 import { filmes } from "../data/filmes";
 import { novosFilmes } from "../data/novosFilmes";
 import { BiSolidCameraMovie } from "react-icons/bi";
-import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaYoutube, FaPlay } from "react-icons/fa";
 import Capa from "../assets/capa-do-filme.jpg";
 import Cinema from "../assets/sala-de-cinema.jpg";
 
@@ -45,7 +45,8 @@ function Home() {
               Avaliação: {estrelasAvaliacao(avalicao)}
             </h3>
             <div className="w-full flex items-center justify-center gap-5">
-              <button className="w-full h-10 rounded-lg bg-red-600 text-white active:bg-red-700 transition-all duration-300 cursor-pointer">
+              <button className="w-full h-11 rounded-lg bg-red-600 text-white active:bg-red-700 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2">
+                <FaPlay/>
                 ASSISTIR
               </button>
             </div>
@@ -63,8 +64,8 @@ function Home() {
         </div>
         <div className="w-full flex items-center justify-center flex-wrap gap-5 p-5">
           {filmesFilter.map((filme, index) => (
-            <div key={index} className="w-96 rounded-lg bg-zinc-800 border-2 border-zinc-700 overflow-hidden">
-              <img src={filme.imagem} alt="Imagem" className="w-full h-96 bg-zinc-700"/>
+            <div key={index} className="w-96 rounded-lg bg-zinc-800 border-2 border-zinc-700 overflow-hidden hover:shadow-2xl shadow-red-600 transition-all duration-300">
+              <img src={filme.imagem} alt="Imagem" className="w-full h-96 bg-zinc-700 "/>
               <div className="w-full p-3 flex items-center justify-between">
                 <h3 className="text-white">{filme.genero}</h3>
                 <h4 className="text-zinc-300">{filme.ano}</h4>
@@ -74,8 +75,9 @@ function Home() {
         </div>
         <div className="NovosFilmes w-full h-screen flex items-center justify-center gap-5">
           <div className="Card w-2xl flex items-center justify-center flex-col gap-5">
-            <div className="w-full h-20 p-3 flex items-center justify-items-start bg-zinc-800 rounded-lg border-l-4 border-l-red-600">
+            <div className="w-full h-20 p-3 flex items-start justify-items-start flex-col bg-zinc-800 rounded-lg border-l-4 border-l-red-600">
               <h1 className="text-2xl text-white font-bold">Novos filmes</h1>
+              <p className="text-zinc-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             {novosFilmes.map((novoFilme, index) => (
               <div key={index} className="w-full h-20 p-3 flex items-center justify-items-start bg-zinc-800 rounded-lg gap-3 border-2 border-zinc-700">
@@ -102,13 +104,13 @@ function Home() {
             </div>
           </div>
           <div className="flex items-center justify-center gap-3">
-            <button className="w-12 h-12 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center text-white hover:text-red-600 transition-all duration-300">
+            <button className="w-12 h-12 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center text-white hover:bg-red-600 transition-all duration-300 hover:scale-110">
               <FaInstagram className="text-3xl"/>
             </button>
-            <button className="w-12 h-12 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center text-white hover:text-red-600 transition-all duration-300">
+            <button className="w-12 h-12 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center text-white hover:bg-red-600 transition-all duration-300 hover:scale-110">
               <FaFacebook className="text-3xl"/>
             </button>
-            <button className="w-12 h-12 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center text-white hover:text-red-600 transition-all duration-300">
+            <button className="w-12 h-12 rounded-full bg-zinc-800 border-2 border-zinc-700 cursor-pointer flex items-center justify-center text-white hover:bg-red-600 transition-all duration-300 hover:scale-110">
               <FaYoutube className="text-3xl"/>
             </button>
           </div>

@@ -10,6 +10,14 @@ import capaFilme9 from "../assets/Img/capa-do-filme9.jpg";
 import capaFilme10 from "../assets/Img/capa-do-filme10.jpg";
 import capaFilme11 from "../assets/Img/capa-do-filme11.jpg";
 import capaFilme12 from "../assets/Img/capa-do-filme12.jpg";
+import capaFilme13 from "../assets/Img/capa-do-filme13.jpg";
+import capaFilme14 from "../assets/Img/capa-do-filme14.jpg";
+import capaFilme15 from "../assets/Img/capa-do-filme15.jpg";
+import capaFilme16 from "../assets/Img/capa-do-filme16.jpg";
+import capaFilme17 from "../assets/Img/capa-do-filme17.jpg";
+import capaFilme18 from "../assets/Img/capa-do-filme18.jpg";
+import capaFilme19 from "../assets/Img/capa-do-filme19.jpg";
+import capaFilme20 from "../assets/Img/capa-do-filme20.jpg";
 
 export const filmes = [
   {
@@ -83,5 +91,53 @@ export const filmes = [
     genero: "Ficção cientifica",
     ano: "2026",
     categoria: "Ficção",
+  },
+  {
+    imagem: capaFilme13,
+    genero: "Terror",
+    ano: "2026",
+    categoria: "Terror",
+  },
+  {
+    imagem: capaFilme14,
+    genero: "Ficção cientifica",
+    ano: "2026",
+    categoria: "Ficção",
+  },
+  {
+    imagem: capaFilme15,
+    genero: "Comédia",
+    ano: "2026",
+    categoria: "Comédia",
+  },
+  {
+    imagem: capaFilme16,
+    genero: "Aventura",
+    ano: "2026",
+    categoria: "Aventura",
+  },
+  {
+    imagem: capaFilme17,
+    genero: "Terror",
+    ano: "2026",
+    categoria: "Terror",
+  },
+  {
+    imagem: capaFilme18,
+    genero: "Ação",
+    ano: "2026",
+    categoria: "Ação",
+  },
+  {
+    imagem: capaFilme19,
+    genero: "Aventura",
+    ano: "2026",
+    categoria: "Aventura",
+  },
+  {
+    imagem: capaFilme20,
+    genero: "Comédia",
+    ano: "2026",
+    categoria: "Comédia",
   },
 ];
