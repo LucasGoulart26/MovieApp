@@ -64,11 +64,14 @@ function Home() {
         </div>
         <div className="w-full flex items-center justify-center flex-wrap gap-5 p-5">
           {filmesFilter.map((filme, index) => (
-            <div key={index} className="w-96 rounded-lg bg-zinc-800 border-2 border-zinc-700 overflow-hidden hover:shadow-2xl shadow-red-600 transition-all duration-300">
+            <div key={index} className="w-96 rounded-lg bg-zinc-800 border-2 border-zinc-700 overflow-hidden hover:shadow-lg shadow-red-600 transition-all duration-300">
               <img src={filme.imagem} alt="Imagem" className="w-full h-96 bg-zinc-700 "/>
-              <div className="w-full p-3 flex items-center justify-between">
-                <h3 className="text-white">{filme.genero}</h3>
-                <h4 className="text-zinc-300">{filme.ano}</h4>
+              <div className="p-3">
+                <div className="w-full flex items-center justify-between">
+                  <h3 className="text-white">{filme.genero}</h3>
+                  <h4 className="text-zinc-300">{filme.ano}</h4>
+                </div>
+                <h2 className="text-white">Avaliação: {estrelasAvaliacao(avalicao)}</h2>
               </div>
             </div>
           ))}

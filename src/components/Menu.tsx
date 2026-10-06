@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaUserCircle } from "react-icons/fa";
 
 function Menu() {
     return(
@@ -11,11 +11,11 @@ function Menu() {
                 <div className="Search w-96 h-10 flex items-center justify-center">
                     <input type="text" placeholder="Search movies" className="w-full h-full outline-0 p-3 text-white bg-zinc-800 border-2 border-zinc-700 rounded-bl-lg rounded-tl-lg"/>
                     <button className="w-14 h-full cursor-pointer bg-red-600 rounded-br-lg rounded-tr-lg flex items-center justify-center">
-                        <FaSearch className="text-white"/>
+                        <FaSearch className="text-white text-2xl"/>
                     </button>
                 </div>
-                <button className="w-20 h-10 rounded-lg bg-red-600 cursor-pointer text-white active:bg-red-700 transition-all duration-300">
-                    <Link to="/login">Login</Link>
+                <button className="w-10 h-10 rounded-full bg-red-600 cursor-pointer text-white active:bg-red-700 transition-all duration-300 flex items-center justify-center">
+                    <Link to="/login"><FaUserCircle className="text-2xl"/></Link>
                 </button>
             </div>
         </div>
